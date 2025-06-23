@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3dcb4;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: #5e412f;
+  text-decoration: none;
+  font-weight: bold;
+  user-select: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.back-button:hover {
+  color: #3e2c1f;
+}
+
+.title {
+  color: #5e412f;
+  font-size: 3rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.player {
+  background-color: #fff4dc;
+  border: 2px solid #5e412f;
+  border-radius: 16px;
+  padding: 30px;
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  outline: none;
+  cursor: text;
+  color: #5e412f;
+}
+
+.score-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.score-controls button {
+  font-size: 2rem;
+  padding: 16px 24px;
+  background-color: #5e412f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.score-controls button:hover {
+  background-color: #3e2c1f;
+}
+
+.score {
+  font-size: 2.5rem;
+  color: #5e412f;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#add-player-button {
+  font-size: 1.5rem;
+  padding: 14px 28px;
+  background-color: #5e412f;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#add-player-button:hover {
+  background-color: #3e2c1f;
+}
+
+.delete-button {
+  margin-top: 15px;
+  background-color: #c44545;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #a03030;
+}
+
+.large-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.large-utility-button {
+  width: 120px;
+  height: 120px;
+  font-size: 2.5rem;
+  background-color: #5e412f;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.large-utility-button:hover {
+  background-color: #3e2c1f;
+}
+
+/* Popup overlay */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Hide popup by default */
+.hidden {
+  display: none;
+}
+
+/* Popup content box */
+.popup-content {
+  background-color: #fff4dc;
+  border: 3px solid #5e412f;
+  border-radius: 20px;
+  padding: 30px 40px;
+  max-width: 320px;
+  text-align: center;
+  position: relative;
+  color: #5e412f;
+  font-size: 1.25rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+/* Close button */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #5e412f;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.close-popup:hover {
+  color: #a03030;
+}
+
+.popup-image {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

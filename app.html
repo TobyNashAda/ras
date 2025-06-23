@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ra's Reach</title>
+  <link rel="icon" href="https://img.freepik.com/premium-vector/egyptian-pyramids-icon-cartoon-illustration-pyramids-vector-icon-web-design_96318-23521.jpg" type="image/jpeg" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button">&lt;</a>
+    <h1 class="title">Ra's Reach</h1>
+  </header>
+
+  <main id="players-container">
+    <div class="player" id="player1">
+      <div class="name" contenteditable="true">Player 1</div>
+      <div class="score-controls">
+        <button onclick="changeScore('player1', -1)">−</button>
+        <span class="score" id="score-player1">0</span>
+        <button onclick="changeScore('player1', 1)">+</button>
+      </div>
+    </div>
+
+    <div class="player" id="player2">
+      <div class="name" contenteditable="true">Player 2</div>
+      <div class="score-controls">
+        <button onclick="changeScore('player2', -1)">−</button>
+        <span class="score" id="score-player2">0</span>
+        <button onclick="changeScore('player2', 1)">+</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="button-wrapper">
+    <button id="add-player-button">+ Add Player</button>
+  </div>
+
+  <!-- Large utility buttons below add player -->
+  <div class="large-buttons-grid">
+    <button class="large-utility-button">?</button>
+    <button class="large-utility-button">i</button>
+    <button class="large-utility-button"></button>
+    <button class="large-utility-button"></button>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <button id="close-popup" class="close-popup">×</button>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
