@@ -3,6 +3,9 @@ body {
   padding: 0;
   background-color: #f3dcb4;
   font-family: 'Segoe UI', sans-serif;
+  background-image: url('https://png.pngtree.com/background/20220726/original/pngtree-ancient-egypt-egyptian-hieroglyphs-seamless-picture-image_1822846.jpg');
+  background-repeat: repeat;
+  background-size: 400px;
 }
 
 header {
@@ -17,7 +20,8 @@ header {
   top: 50%;
   transform: translateY(-50%);
   font-size: 3rem;
-  color: #5e412f;
+  color: #000000;
+  background-color: #f5d689;
   text-decoration: none;
   font-weight: bold;
   user-select: none;
@@ -26,7 +30,7 @@ header {
 }
 
 .back-button:hover {
-  color: #3e2c1f;
+  color: #ffffff;
 }
 
 .title {
