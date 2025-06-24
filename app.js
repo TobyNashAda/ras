@@ -61,19 +61,23 @@ document.addEventListener("DOMContentLoaded", () => {
     [
       { title: "3x Boost", desc: "Move 3 extra spaces", img: null },
       { title: "Shield", desc: "Immune to traps for 3 turns", img: "https://png.pngtree.com/png-vector/20231116/ourmid/pngtree-elegant-golden-shield-png-image_10625519.png" },
-      { title: "Free Lateral Move", desc: "Move as far as you want sideways", img: "https://cdn-icons-png.flaticon.com/512/10731/10731661.png" }
+      { title: "Lateral Dash", desc: "Move as far as you want sideways", img: "https://cdn-icons-png.flaticon.com/512/10731/10731661.png" },
+      { title: "Sandstorm", desc: "Moves everyone down one except you", img: "https://img.pikbest.com/origin/09/24/99/74jpIkbEsTkub.png!sw800" },
+      { title: "Snake bite", desc: "Removes a powerup from a player", img: "https://images.vexels.com/media/users/3/350720/isolated/preview/14e5d6e96599e8ec03e3c417c1cf7f4e-snake-on-skull.png" }
     ],
     [
-      { title: "Trap!", desc: "You're stuck for a turn", img: null },
-      { title: "Pitfall", desc: "Go back 2 spaces", img: null },
-      { title: "Freeze", desc: "Miss next turn", img: null }
+      { title: "Use this trap on any player", desc: "Stuck for 1 turn", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
+      { title: "Use this trap on any player", desc: "Stuck for 2 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
+      { title: "Use this trap on any player", desc: "Stuck for 3 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" }
     ],
     [
       { title: "Heads!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" },
-      { title: "Tails!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" },
+      { title: "Tails!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" }
     ],
     [
-      { title: "Information", desc: "NULL", img: null }
+      { title: "3 Sided Dice", desc: "ONE", img: 'https://static.vecteezy.com/system/resources/previews/027/388/523/non_2x/white-face-cube-dot-of-game-dice-png.png' },
+      { title: "3 Sided Dice", desc: "TWO", img: 'https://opengameart.org/sites/default/files/side_2_pips.png' },
+      { title: "3 Sided Dice", desc: "THREE", img: 'https://opengameart.org/sites/default/files/side_3_pips.png' }
     ]
   ];
 
