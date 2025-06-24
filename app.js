@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
       { title: "Snake bite", desc: "Removes a powerup from a player", img: "https://images.vexels.com/media/users/3/350720/isolated/preview/14e5d6e96599e8ec03e3c417c1cf7f4e-snake-on-skull.png" }
     ],
     [
-      { title: "Use this trap on any player", desc: "Stuck for 1 turn", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
-      { title: "Use this trap on any player", desc: "Stuck for 2 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
-      { title: "Use this trap on any player", desc: "Stuck for 3 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" }
+      { title: "Place on any tile", desc: "Stuck for 1 turn", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
+      { title: "Place on any tile", desc: "Stuck for 2 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
+      { title: "Place on any tile", desc: "Stuck for 3 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" }
     ],
     [
       { title: "Heads!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" },
