@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { title: "Shield", desc: "Immune to traps for 3 turns", img: "https://png.pngtree.com/png-vector/20231116/ourmid/pngtree-elegant-golden-shield-png-image_10625519.png" },
       { title: "Lateral Dash", desc: "Move as far as you want sideways", img: "https://cdn-icons-png.flaticon.com/512/10731/10731661.png" },
       { title: "Sandstorm", desc: "Moves everyone down one except you", img: "https://img.pikbest.com/origin/09/24/99/74jpIkbEsTkub.png!sw800" },
-      { title: "Snake bite", desc: "Removes a powerup from a player - Keep for as long as you want", img: "https://images.vexels.com/media/users/3/350720/isolated/preview/14e5d6e96599e8ec03e3c417c1cf7f4e-snake-on-skull.png" }
+      { title: "Snake Bite", desc: "Removes a powerup from a player - Keep for as long as you want", img: "https://images.vexels.com/media/users/3/350720/isolated/preview/14e5d6e96599e8ec03e3c417c1cf7f4e-snake-on-skull.png" }
     ],
     [
       { title: "Place on any tile", desc: "Stuck for 1 turn", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
