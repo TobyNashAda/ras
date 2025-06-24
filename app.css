@@ -213,6 +213,8 @@ main {
 }
 
 .dim {
-    max-width: 90px;
-    max-height: auto;
+  max-width: 90px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
