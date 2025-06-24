@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scoreElement.textContent = score;
   }
 
-  window.changeScore = changeScore; // make accessible in inline onclick
+  window.changeScore = changeScore;
 
   addBtn.addEventListener("click", () => {
     if (playerCount >= maxPlayers) return;
@@ -51,51 +51,54 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Popup related code
+  // --- POPUP LOGIC ---
+
   const popup = document.getElementById("popup");
   const popupText = document.getElementById("popup-text");
   const closePopupBtn = document.getElementById("close-popup");
 
-  const messages = [
-    {
-      title: "2x boost",
-      desc: "move 2 more spaces",
-      img: null // no image
-    },
-    {
-      title: "Shield",
-      desc: "can't be pushed down by other players for 3 turns",
-      img: "https://png.pngtree.com/png-vector/20231116/ourmid/pngtree-elegant-golden-shield-png-image_10625519.png"
-    },
-    {
-      title: "Free lateral movement",
-      desc: "move as far as you want laterally",
-      img: "https://cdn-icons-png.flaticon.com/512/10731/10731661.png"
-    }
+  const popupSets = [
+    [
+      { title: "3x Boost", desc: "Move 3 extra spaces", img: null },
+      { title: "Shield", desc: "Immune to traps for 3 turns", img: "https://png.pngtree.com/png-vector/20231116/ourmid/pngtree-elegant-golden-shield-png-image_10625519.png" },
+      { title: "Free Lateral Move", desc: "Move as far as you want sideways", img: "https://cdn-icons-png.flaticon.com/512/10731/10731661.png" }
+    ],
+    [
+      { title: "Trap!", desc: "You're stuck for a turn", img: null },
+      { title: "Pitfall", desc: "Go back 2 spaces", img: null },
+      { title: "Freeze", desc: "Miss next turn", img: null }
+    ],
+    [
+      { title: "Heads!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" },
+      { title: "Tails!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" },
+    ],
+    [
+      { title: "Information", desc: "NULL", img: null }
+    ]
   ];
 
-  // The question mark button is the first large-utility-button
-  const questionBtn = document.querySelector(".large-utility-button");
+  const buttons = document.querySelectorAll(".large-utility-button");
 
-  questionBtn.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * messages.length);
-    const message = messages[randomIndex];
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const messages = popupSets[index];
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
-    let html = "";
-    if (message.img) {
-      html += `<img src="${message.img}" alt="${message.title}" class="popup-image" />`;
-    }
-    html += `<strong>${message.title}</strong> - ${message.desc}`;
+      let html = "";
+      if (randomMessage.img) {
+        html += `<img src="${randomMessage.img}" alt="${randomMessage.title}" class="popup-image" />`;
+      }
+      html += `<strong>${randomMessage.title}</strong> - ${randomMessage.desc}`;
 
-    popupText.innerHTML = html;
-    popup.classList.remove("hidden");
+      popupText.innerHTML = html;
+      popup.classList.remove("hidden");
+    });
   });
 
   closePopupBtn.addEventListener("click", () => {
     popup.classList.add("hidden");
   });
 
-  // Close popup if clicking outside the content box
   popup.addEventListener("click", (e) => {
     if (e.target === popup) {
       popup.classList.add("hidden");
