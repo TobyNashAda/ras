@@ -6,9 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function changeScore(playerId, delta) {
     const scoreElement = document.getElementById(`score-${playerId}`);
+    const playerDiv = document.getElementById(playerId);
     let score = parseInt(scoreElement.textContent, 10);
-    score = Math.max(0, score + delta);
+
+    score = Math.max(0, Math.min(15, score + delta)); // Clamp between 0 and 15
     scoreElement.textContent = score;
+
+    if (score === 15) {
+      playerDiv.style.backgroundColor = "#4CAF50"; // Green highlight
+      playerDiv.style.color = "#fff";
+    } else {
+      playerDiv.style.backgroundColor = "";
+      playerDiv.style.color = "";
+    }
   }
 
   window.changeScore = changeScore;
