@@ -66,18 +66,18 @@ document.addEventListener("DOMContentLoaded", () => {
       { title: "Snake Bite", desc: "Removes a powerup from a player - Keep for as long as you want", img: "https://images.vexels.com/media/users/3/350720/isolated/preview/14e5d6e96599e8ec03e3c417c1cf7f4e-snake-on-skull.png" }
     ],
     [
-      { title: "Place on any tile", desc: "Stuck for 1 turn", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
-      { title: "Place on any tile", desc: "Stuck for 2 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
-      { title: "Place on any tile", desc: "Stuck for 3 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" }
+      { title: "Place on any tile or other players", desc: "Stuck for 1 turn", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
+      { title: "Place on any tile or other players", desc: "Stuck for 2 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" },
+      { title: "Place on any tile or other players", desc: "Stuck for 3 turns", img: "https://magipik.com/_next/image?url=https%3A%2F%2Fmedia.magipik.com%2Fsample%2Fdata%2Fpreview%2Fthumbnail%2Fanimal-traps-mouse-trap-metal-bear-trap-butterfly-net-isolated-hunting-catching-cruelty-809847.png&w=1500&q=75" }
     ],
     [
       { title: "Heads!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" },
       { title: "Tails!", desc: "Flipped a coin", img: "https://cdn-icons-png.flaticon.com/512/8012/8012840.png" }
     ],
     [
-      { title: "3 Sided Dice", desc: "ONE", img: 'https://static.vecteezy.com/system/resources/previews/027/388/523/non_2x/white-face-cube-dot-of-game-dice-png.png' },
-      { title: "3 Sided Dice", desc: "TWO", img: 'https://opengameart.org/sites/default/files/side_2_pips.png' },
-      { title: "3 Sided Dice", desc: "THREE", img: 'https://opengameart.org/sites/default/files/side_3_pips.png' }
+      { title: "You may go", desc: "ONE tile, above or laterally", img: 'https://static.vecteezy.com/system/resources/previews/027/388/523/non_2x/white-face-cube-dot-of-game-dice-png.png' },
+      { title: "You may go up to", desc: "TWO tile, above or laterally", img: 'https://opengameart.org/sites/default/files/side_2_pips.png' },
+      { title: "You may go up to", desc: "THREE tile, above or laterally", img: 'https://opengameart.org/sites/default/files/side_3_pips.png' }
     ]
   ];
 
